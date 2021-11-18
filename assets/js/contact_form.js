@@ -37,6 +37,15 @@ $(document).ready(function() {
         }
     })
 
+    checkbox = document.getElementById('checkbox');
+    checkbox.addEventListener('change', function() {
+        if (!checkbox.checked) {
+            $('#checkbox').addClass('input__error');
+        } else {
+            $('#checkbox').removeAttr('title');
+        }
+    });
+
     $('#btnSend').click(function() {
         var errors = '';
 
@@ -50,7 +59,7 @@ $(document).ready(function() {
                 errors += '<p class="error"><i class="fas fa-exclamation-circle"></i>El nombre no puede contener símbolos ni números</p>';
                 $('#name').attr("title", "El nombre no puede contener símbolos ni números (3-50)");
             } else {
-                $('#name').css("border-bottom-color", "#d1d1d1")
+                $('#name').css("border-bottom-color", "#d1d1d1");
             }
         }
 
@@ -64,7 +73,7 @@ $(document).ready(function() {
                 errors += '<p class="error"><i class="fas fa-exclamation-circle"></i>El correo no tiene un formato correcto</p>';
                 $('#email').attr("title", "El correo debe tener un formato válido y su dominio tener entre 2 y 3 caracteres");
             } else {
-                $('#email').css("border-bottom-color", "#d1d1d1")
+                $('#email').css("border-bottom-color", "#d1d1d1");
             }
         }
 
@@ -74,7 +83,15 @@ $(document).ready(function() {
             $('#message').attr("title", "El mensaje debe contener algo escrito (10-500)");
             $('#message').addClass('input__error');
         } else {
-            $('#message').css("border-bottom-color", "#d1d1d1")
+            $('#message').css("border-bottom-color", "#d1d1d1");
+        }
+
+        // Validate checkbox ==============================
+        if (!checkbox.checked) {
+            errors += '<p class="error"><i class="fas fa-exclamation-circle"></i>Marque la casilla para poder enviar su información</p>';
+            $('#checkbox').attr("title", "Es necesario marcarlo para poder enviar su información");
+        } else {
+            $('#checkbox').removeAttr('title');
         }
 
         // SENDING message ============================
@@ -107,10 +124,16 @@ function ajaxRequest() {
     var email = $('#email').val().trim();
     var phone = $('#phone').val().trim();
     var message = $('#message').val().trim();
+    var checkbox = document.getElementById('checkbox');
+
+    if (!checkbox.checked) {
+        $('#checkbox').addClass('input__error');
+    } else {
+        $('#checkbox').removeClass('input__error');
+    }
 
     //if name and email are validated
-    if (validate(name, 'name') && validate(email, 'email') && validate(message, 'text') && (phone.length == 0 || (phone.length != 0 && validate(phone, 'phone')))) {
-
+    if (checkbox.checked && validate(name, 'name') && validate(email, 'email') && validate(message, 'text') && (phone.length == 0 || (phone.length != 0 && validate(phone, 'phone')))) {
         //Form fields data:
         var fields = {
             "name": name,
@@ -157,7 +180,6 @@ function validate(field, expr) {
 
 function verifyFields() {
     //Verify fields has changed and if it meet the requirements
-
     if ($("#name").val().trim().length > 0) {
         var name_value = $('#name').val().trim();
         if (validate(name_value, 'name')) {
@@ -202,6 +224,7 @@ function verifyFields() {
             $('input#phone').attr("title", "El número escrito no existe");
         }
     } else {
+        $('input#phone').removeClass('input__error');
         $('input#phone').removeClass('input__validation');
         $('input#phone').removeAttr('title');
     }

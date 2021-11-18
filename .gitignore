@@ -1,4 +1,4 @@
-# Images
+# Images, media files, photoshop files, etc.
 *.jpg
 *.png 
 *.gif 
@@ -13,7 +13,7 @@
 *.jfif
 *.psd
 # Another folders
-.htaccess
+.htaccess*
 .vscode/
 /assets/mockup-electronic-devices.zip
 /logs

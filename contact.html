@@ -55,16 +55,19 @@
                 <h2>Envía un mensaje</h2>
                 <div class="user__info">
                     <label for="name">Nombre y apellidos *</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required />
 
                     <label for="email">Correo electrónico *</label>
-                    <input type="text" id="email" name="email" required>
+                    <input type="text" id="email" name="email" required />
 
                     <label for="phone">Teléfono móvil/fijo (opcional)</label>
-                    <input type="text" id="phone" name="phone" title="Este campo no es obligatorio">
+                    <input type="text" id="phone" name="phone" title="Este campo no es obligatorio" />
 
                     <label for="message">Mensaje que desea enviar *</label>
                     <textarea id="message" name="message" required></textarea>
+
+
+                    <label for="checkbox"><input type="checkbox" name="checkbox" id="checkbox" required /> Acepto lo <a href="privacy_policy.html" class="link" target="_blank">política de privacidad</a> de la web</label>
 
                     <input type="button" value="Enviar Mensaje" id="btnSend">
                 </div>

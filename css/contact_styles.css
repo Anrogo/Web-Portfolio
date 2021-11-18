@@ -121,6 +121,10 @@
 
 /* Formulario de contacto*/
 
+.m-right {
+    margin-right: 16px;
+}
+
 form.form__contact {
     width: 62%;
     padding: 30px 40px;
@@ -142,7 +146,7 @@ form.form__contact label {
     font-weight: 600;
 }
 
-form.form__contact input,
+form.form__contact input:not([type="checkbox"]),
 form.form__contact textarea {
     width: 100%;
     padding: 8px 0px 5px;
