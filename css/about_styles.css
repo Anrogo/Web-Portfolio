@@ -1,0 +1,99 @@
+.hero {
+    height: 80vh;
+}
+
+.hero__subtitle {
+    font-weight: 600;
+}
+
+.hero__texts {
+    width: 100%;
+}
+
+.info__main {
+    margin: 20px;
+}
+
+.info__title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.info__content p,
+.info__education p,
+.info__courses p {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 8px;
+}
+
+
+/* BOX OF SKILL ICONS */
+
+.info__skills {
+    display: flex;
+}
+
+.info__box {
+    width: fit-content;
+    margin: 6px;
+}
+
+.icon__box {
+    width: 80%;
+    border: 2px solid #000;
+    text-align: center;
+    padding: 20px;
+}
+
+.icon__box .icon img {
+    width: 80px;
+}
+
+
+/* LIST OF COURSES */
+
+.info__courses ol li ul {
+    list-style-type: circle;
+}
+
+.info__courses ol {
+    font-size: 1.2em;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width:1000px) {
+    .info__skills {
+        flex-direction: column;
+    }
+    .info__box {
+        width: 100%;
+    }
+    .icon__box {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .icon img {
+        width: 50px!important;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .icon__box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .hero__container {
+        margin-top: 50px;
+    }
+}

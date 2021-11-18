@@ -1,0 +1,21 @@
+# Images
+*.jpg
+*.png 
+*.gif 
+*.bmp
+*.jpeg
+*.svg
+*.ico
+*.mp3
+*.mp4
+*.avi
+*.webp
+*.jfif
+*.psd
+# Another folders
+.htaccess
+.vscode/
+/assets/mockup-electronic-devices.zip
+/logs
+/projects/*
+!/projects/.gitkeep
