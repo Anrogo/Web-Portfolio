@@ -12,6 +12,7 @@
 *.webp
 *.jfif
 *.psd
+*.pdf
 # Another folders
 .htaccess*
 .vscode/
@@ -19,3 +20,4 @@
 /logs
 /projects/*
 !/projects/.gitkeep
+

@@ -263,6 +263,10 @@ hr {
     gap: 10px;
 }
 
+.projects__title a.link {
+    color: #fff;
+}
+
 .projects__item {
     position: relative;
     width: 100%;

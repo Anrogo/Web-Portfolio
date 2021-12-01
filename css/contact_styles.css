@@ -118,6 +118,18 @@
     margin-left: 4px;
 }
 
+.fa-file-pdf-o {
+    font-size: 1.4rem;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.info_items-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
 
 /* Formulario de contacto*/
 
@@ -324,12 +336,10 @@ form.form__contact input[type="button"]:active {
     .contact__info .info__title h2 {
         font-size: 1em;
     }
-    .info__items p:nth-child(1),
-    .info__items p:nth-child(2) {
+    .info__items p {
         font-size: 0.85em;
     }
-    .info__items p:nth-child(1) span,
-    .info__items p:nth-child(2) span {
+    .info__items p span {
         visibility: hidden;
     }
     h1 {
@@ -351,9 +361,8 @@ form.form__contact input[type="button"]:active {
     .contact__info .info__title h2 {
         font-size: 1em;
     }
-    .info__items p:nth-child(1),
-    .info__items p:nth-child(2) {
-        font-size: 0.7em;
+    .info__items p {
+        font-size: 0.8em;
     }
     form.form__contact {
         width: 60%;
@@ -384,8 +393,7 @@ form.form__contact input[type="button"]:active {
     .info__items p {
         margin-right: 20px;
     }
-    .info__items p:nth-child(1) span,
-    .info__items p:nth-child(2) span {
+    .info__items p span {
         visibility: visible;
         font-size: 1.6em;
     }
