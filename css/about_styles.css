@@ -50,6 +50,10 @@
     width: 80px;
 }
 
+.icon-fill {
+    height: 60px;
+}
+
 
 /* LIST OF COURSES */
 
@@ -84,7 +88,7 @@
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .icon__box {
         display: flex;
         flex-direction: row;
