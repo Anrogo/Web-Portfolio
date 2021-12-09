@@ -35,7 +35,7 @@ body {
 }
 
 .link {
-    color: var(--color-primary);
+    color: var(--color-link);
     text-decoration: none;
 }
 
@@ -139,7 +139,7 @@ body {
     display: inline-block;
     background: #fff;
     padding: var(--button-padding);
-    color: var(--color-primary);
+    color: var(--color-link);
     text-decoration: none;
     border-radius: 40px;
     box-shadow: 1px 1px 6px #000;

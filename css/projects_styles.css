@@ -1,12 +1,15 @@
 /* Styles for Projects page */
 
 .hero {
-    height: auto;
+    height: 80vh;
 }
 
+
+/*
 .hero .container {
     height: auto;
 }
+*/
 
 .hero__texts {
     margin-bottom: 10px;
@@ -16,12 +19,125 @@
     font-weight: 600;
 }
 
-.hero__image {
-    text-align: center;
+
+/* MAIN - Projects */
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
-.hero__image img {
-    width: 300px;
+.info__main {
+    margin: 20px;
+    width: 70%;
+    flex-direction: column;
+}
+
+.project__container {
+    display: flex;
+    margin: 8px;
+}
+
+.project .project__title {
+    margin-left: 16px;
+    margin-bottom: 8px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project__title h2 {
+    font-style: italic;
+}
+
+.project__title .btn__github {
+    cursor: pointer;
+    width: 130px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 24px;
+    border: 2px solid #06165d;
+    transition-property: background-color;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    /* transition-delay: 0.2s; */
+}
+
+i.fab.fa-github-square {
+    font-size: 1.3rem;
+    margin-top: 2px;
+}
+
+.project__title .btn__github .arrow {
+    display: none;
+}
+
+.project__title .btn__github:hover {
+    color: #fff;
+    background-color: #06165d;
+}
+
+.project__title .btn__github a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project__title .btn__github:hover {
+    justify-content: space-between;
+}
+
+.project__title .btn__github:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.project__title .btn__github:hover .icon {
+    display: none;
+}
+
+.project__title .btn__github:hover .arrow {
+    display: inline;
+}
+
+.project .project__details {
+    margin-right: 8px;
+    text-align: justify;
+    width: 65%;
+    padding: 12px;
+}
+
+ul.project__details__list {
+    padding-left: 0;
+}
+
+ul.project__details__list li {
+    margin-top: 8px;
+}
+
+.project__details img.icon {
+    width: 1rem;
+}
+
+.project__img_border {
+    border: 4px solid #06165d;
+    border-radius: 24px;
+}
+
+.project__image img {
+    width: 500px;
+    border-radius: 18px;
+}
+
+.project__details__list {
+    list-style-type: none;
+}
+
+hr {
+    width: 40%;
+    margin-left: 16px;
 }
 
 @media screen and (max-width:1000px) {
