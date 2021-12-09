@@ -33,6 +33,10 @@ main {
     flex-direction: column;
 }
 
+article.project {
+    margin-top: 60px;
+}
+
 .project__container {
     display: flex;
     margin: 8px;
@@ -135,9 +139,22 @@ ul.project__details__list li {
     list-style-type: none;
 }
 
-hr {
-    width: 40%;
+.project hr {
+    width: 100%;
     margin-left: 16px;
+}
+
+@media screen and (max-width:1200px) {
+    .project__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project__details {
+        width: 100%!important;
+    }
+    .project__img_border {
+        width: fit-content;
+    }
 }
 
 @media screen and (max-width:1000px) {
@@ -145,6 +162,40 @@ hr {
         margin: 0 50px;
     }
 }
+
+@media screen and (max-width:720px) {
+    .project__image img {
+        width: 400px;
+    }
+    iframe {
+        width: 400px!important;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .info__main {
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .project__image img {
+        width: 280px;
+    }
+    iframe {
+        width: 280px!important;
+    }
+    .project .project__title {
+        justify-content: flex-start!important;
+    }
+    .btn__github {
+        margin-left: 8px;
+    }
+    .project hr {
+        width: 95%;
+    }
+}
+
+
+/* Falla el responsive al reducir más de 489px por culpa de styles.css */
 
 @media screen and (max-width:420px) {
     .hero__container {
@@ -165,19 +216,8 @@ hr {
     .hero__subtitle {
         font-size: 1rem!important;
     }
-    .hero__image img {
-        width: 250px;
-    }
 }
 
-@media screen and (max-height:450px) {
-    .hero__image img {
-        width: 120px;
-    }
-}
+@media screen and (max-height:450px) {}
 
-@media screen and (max-height:320px) {
-    .hero__image img {
-        width: 100px;
-    }
-}
+@media screen and (max-height:320px) {}
