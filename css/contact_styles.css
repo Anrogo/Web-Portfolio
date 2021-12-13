@@ -34,6 +34,10 @@
     font-weight: 600;
 }
 
+a.header__link {
+    color: white;
+}
+
 
 /* FORMULARIO =================================== */
 

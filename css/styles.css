@@ -36,10 +36,11 @@ body {
 
 .link {
     color: var(--color-link);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .link:hover {
+    color: var(--color-primary);
     text-decoration: underline;
 }
 
@@ -216,6 +217,10 @@ hr {
     text-decoration: none;
     padding: var(--button-padding);
     border-radius: 40px;
+}
+
+.animated__image {
+    width: 100px;
 }
 
 .about {

@@ -54,6 +54,10 @@
     height: 60px;
 }
 
+.icon:hover {
+    cursor: pointer;
+}
+
 
 /* LIST OF COURSES */
 
