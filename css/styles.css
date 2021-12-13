@@ -574,8 +574,14 @@ hr {
     }
     .nav {
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-evenly;
         margin-top: 10px;
+        margin-bottom: 50px;
+        height: 80px;
+    }
+    .nav--footer {
+        margin-bottom: 0px;
     }
     .nav__items {
         padding: 0 10px;
@@ -592,8 +598,9 @@ hr {
         height: 565px;
     }
     .hero__container {
-        margin-left: 0px;
-        margin: 20px;
+        margin-top: 50px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
     .hero__title {
         font-size: 1.6rem;
@@ -630,13 +637,21 @@ hr {
     }
 }
 
+@media screen and (max-width: 250px) {
+    .hero__cta {
+        visibility: hidden;
+    }
+}
+
 @media screen and (max-height: 564px) {
     .hero .container {
         height: 333px;
     }
-    .container h1,
-    .container h2 {
+    .container h1 {
         font-size: 1.3em;
+    }
+    .container h2 {
+        font-size: 1.1em;
     }
 }
 

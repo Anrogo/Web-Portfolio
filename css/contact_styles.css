@@ -330,6 +330,9 @@ form.form__contact input[type="button"]:active {
     h2 {
         font-size: 1.4rem;
     }
+    form.form__contact input[type="button"] {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -360,7 +363,6 @@ form.form__contact input[type="button"]:active {
     }
     .contact__info {
         width: 35%;
-        margin-left: -12px;
     }
     .contact__info .info__title h2 {
         font-size: 1em;
@@ -374,15 +376,24 @@ form.form__contact input[type="button"]:active {
     h1 {
         font-size: 1.4rem;
     }
+    .info__items p:nth-child(1) {
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .hero {
-        height: 70vh;
+        height: 77vh;
     }
     .hero__container {
         margin-left: 0;
         margin: 20px;
+    }
+    .hero__texts {
+        margin-bottom: 10px;
+    }
+    .nav {
+        margin-bottom: 0px;
     }
     .form__wrap {
         width: auto;
@@ -431,14 +442,14 @@ form.form__contact input[type="button"]:active {
         font-size: 1rem!important;
         font-weight: 300;
     }
+    .copyright {
+        margin: 0 20px;
+    }
 }
 
 @media screen and (max-width: 300px) {
-    .nav {
-        height: 22px;
-    }
     .hero {
-        height: 62vh;
+        height: 85vh;
     }
     .hero .container {
         height: 414px;
@@ -447,7 +458,7 @@ form.form__contact input[type="button"]:active {
         font-size: 1.2rem;
     }
     .hero__subtitle {
-        font-size: 1rem!important;
+        font-size: 0.9rem!important;
         font-weight: 300;
     }
     .form.form__contact {
@@ -461,6 +472,20 @@ form.form__contact input[type="button"]:active {
         width: 130px;
         font-size: 1rem;
         margin-left: 12px;
+    }
+    .info__items {
+        display: flex;
+        flex-direction: column;
+    }
+    .info__items p {
+        justify-content: center;
+    }
+    .info__items p span {
+        visibility: hidden;
+        font-size: 1.6em;
+    }
+    .info__items p:nth-child(1) {
+        margin-left: 20px;
     }
 }
 
@@ -477,7 +502,7 @@ form.form__contact input[type="button"]:active {
 
 @media screen and (max-height: 564px) {
     .hero .container {
-        height: 320px;
+        height: 259px!important;
     }
     h1,
     h2 {
