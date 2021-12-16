@@ -34,6 +34,7 @@ main {
 }
 
 article.project {
+    width: 90%;
     margin-top: 60px;
 }
 
@@ -178,13 +179,14 @@ ul.project__details__list li {
         width: 100% !important;
     }
     .project__image img {
-        width: 280px;
+        width: 210px;
     }
     iframe {
         width: 280px!important;
     }
     .project .project__title {
-        justify-content: flex-start!important;
+        justify-content: center;
+        width: 300px;
     }
     .btn__github {
         margin-left: 8px;
@@ -195,7 +197,7 @@ ul.project__details__list li {
 }
 
 
-/* Falla el responsive al reducir más de 489px por culpa de styles.css */
+/* Falla el responsive al reducir más de +/- 423px por culpa del main o alguna clase o todo a la vez*/
 
 @media screen and (max-width:420px) {
     .hero__container {
@@ -210,6 +212,17 @@ ul.project__details__list li {
     .hero__container {
         margin: 0 5px;
     }
+    .project .project__title {
+        width: 250px;
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe {
+        width: 210px!important;
+    }
+    .project__title h2 {
+        margin-bottom: 8px;
+    }
 }
 
 @media screen and (max-height:550px) and (max-width:500px) {
@@ -217,7 +230,3 @@ ul.project__details__list li {
         font-size: 1rem!important;
     }
 }
-
-@media screen and (max-height:450px) {}
-
-@media screen and (max-height:320px) {}

@@ -136,6 +136,10 @@ body {
     margin: 15px 0;
 }
 
+.hero__subtitle img {
+    width: 80px;
+}
+
 .hero__cta {
     display: inline-block;
     background: #fff;
@@ -526,6 +530,9 @@ hr {
     .hero__subtitle {
         font-size: 1.3rem;
     }
+    .hero__subtitle img {
+        width: 50px;
+    }
     .hero .container {
         height: 490px;
     }
@@ -573,12 +580,13 @@ hr {
         margin-bottom: 20px;
     }
     .nav {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        height: 90px;
+        font-size: 1.2rem;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-evenly;
-        margin-top: 10px;
-        margin-bottom: 50px;
-        height: 80px;
     }
     .nav--footer {
         margin-bottom: 0px;
@@ -604,6 +612,9 @@ hr {
     }
     .hero__title {
         font-size: 1.6rem;
+    }
+    .hero__subtitle img {
+        width: 30px;
     }
     /* Main - About */
     .presentation__picture {
