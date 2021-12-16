@@ -179,7 +179,7 @@ ul.project__details__list li {
         width: 100% !important;
     }
     .project__image img {
-        width: 210px;
+        width: 350px;
     }
     iframe {
         width: 280px!important;
@@ -206,6 +206,9 @@ ul.project__details__list li {
     .hero__subtitle {
         font-size: 1rem!important;
     }
+    .project__image img {
+        width: 210px;
+    }
 }
 
 @media screen and (max-width:310px) {
@@ -222,6 +225,18 @@ ul.project__details__list li {
     }
     .project__title h2 {
         margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width:250px) {
+    .project .project__title {
+        width: 180px;
+    }
+    iframe {
+        width: 180px!important;
+    }
+    .project__image img {
+        width: 180px;
     }
 }
 
