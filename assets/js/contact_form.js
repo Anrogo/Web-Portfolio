@@ -49,6 +49,9 @@ $(document).ready(function() {
     $('#btnSend').click(function() {
         var errors = '';
 
+        //Spinner
+        $('#btnSend span').removeClass('no-spinner');
+
         // Validate name ==============================
         if ($('#name').val() == '') {
             errors += '<p class="error"><i class="fas fa-exclamation-circle"></i>Escriba un nombre al menos</p>';
@@ -102,6 +105,7 @@ $(document).ready(function() {
         } else { //If there are no errors, the ajax request is executed to send the mail with the collected data.
 
             ajaxRequest();
+            //Spinner
         }
 
         // CLOSE/HIDDEN MODAL ==============================
@@ -109,10 +113,12 @@ $(document).ready(function() {
             $('#errors').css("visibility", "hidden");
             $('.errors .error').remove();
             errors = '';
+            $('#btnSend span').addClass('no-spinner');
         });
 
         $('#btnConfirm').click(function() {
             $('#confirm').css("visibility", "hidden");
+            $('#btnSend span').addClass('no-spinner');
         });
     });
 

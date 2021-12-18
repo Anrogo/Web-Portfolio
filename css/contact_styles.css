@@ -180,8 +180,9 @@ form.form__contact textarea {
     max-height: 90px;
 }
 
-form.form__contact input[type="button"] {
-    width: 180px;
+form.form__contact button[type="submit"] {
+    width: 200px;
+    height: 45px;
     background: #667eea;
     padding: 10px;
     border: none;
@@ -191,15 +192,14 @@ form.form__contact input[type="button"] {
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
 }
 
-form.form__contact input[type="button"]:hover,
-form.form__contact input[type="button"]:focus {
-    width: 180px;
+form.form__contact button[type="submit"]:hover,
+form.form__contact button[type="submit"]:focus {
     background: #405ddd;
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
     align-self: flex-end;
     color: #fff;
     font-size: 1.2rem;
@@ -208,7 +208,7 @@ form.form__contact input[type="button"]:focus {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-form.form__contact input[type="button"]:active {
+form.form__contact button[type="submit"]:active {
     background: white;
     color: #667eea;
     border: 2px solid #667eea;
@@ -232,6 +232,14 @@ form.form__contact input[type="button"]:active {
     background-repeat: no-repeat;
     background-size: 14px;
     background-position: right;
+}
+
+span.spinner img {
+    width: 20px;
+}
+
+span.no-spinner img {
+    display: none;
 }
 
 
