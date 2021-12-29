@@ -14,7 +14,7 @@
 *.psd
 *.pdf
 *.db
-# Another folders
+# Another files/folders
 .htaccess*
 .vscode/
 /assets/mockup-electronic-devices.zip

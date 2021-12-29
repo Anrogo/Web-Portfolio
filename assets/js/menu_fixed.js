@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(window).scroll(function() {
-            if ($(window).scrollTop() > 60) {
-                console.log("Has sobrepasado el header");
+            if ($(window).scrollTop() > 50) {
+                //console.log("Has sobrepasado el header");
                 //Fijamos el menu superior:
                 $('.hero .nav').attr('id', 'menu-fixed');
                 $('.hero__container').css('margin-top', '150px');
