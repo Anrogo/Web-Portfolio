@@ -679,6 +679,7 @@ main {
 @media screen and (max-width: 420px) {
     .nav--footer {
         flex-direction: column;
+        margin-bottom: 16px!important;
     }
 }
 
@@ -689,9 +690,10 @@ main {
     }
 }
 
-@media screen and (max-width: 250px) {
+@media screen and (max-width: 300px),
+screen and (max-height: 450px) {
     .hero__cta {
-        visibility: hidden;
+        display: none;
     }
 }
 

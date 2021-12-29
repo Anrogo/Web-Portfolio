@@ -183,6 +183,7 @@ form.form__contact textarea {
 form.form__contact button[type="submit"] {
     width: 200px;
     height: 45px;
+    margin-top: 16px;
     background: #667eea;
     padding: 10px;
     border: none;
