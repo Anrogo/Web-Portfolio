@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web Portafolio personal de Antonio Rodríguez González" />
+    <meta name="robots" content="index, follow">
+    <title>Slider App Eventos</title>
+    <link rel="icon" type="image/ico" href="assets/images/desarrollo-web.ico" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider_styles_2.css" />
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            //console.log("Contenido cargado");
+            let slide1 = document.getElementById('slide1');
+            slide1.style.setProperty('opacity', '1');
+        });
+    </script>
+    <script type="text/javascript" src="assets/js/slider.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="slider">
+            <li class="slide" id="slide1">
+                <img src="assets/images/Proyectos/Netjob/home.png" alt="slider image 1" />
+            </li>
+            <li class="slide" id="slide2">
+                <img src="assets/images/Proyectos/Netjob/buscar-servicio-categorias.png" alt="slider image 2" />
+            </li>
+            <li class="slide" id="slide3">
+                <img src="assets/images/Proyectos/Netjob/buscar-servicio-categorias2.png" alt="slider image 3" />
+            </li>
+            <li class="slide" id="slide4">
+                <img src="assets/images/Proyectos/Netjob/registro.png" alt="slider image 4" />
+            </li>
+            <li class="slide" id="slide5">
+                <img src="assets/images/Proyectos/Netjob/login.png" alt="slider image 5" />
+            </li>
+            <li class="slide" id="slide6">
+                <img src="assets/images/Proyectos/Netjob/menu-usuario.png" alt="slider image 6" />
+            </li>
+            <li class="slide" id="slide7">
+                <img src="assets/images/Proyectos/Netjob/favoritos.png" alt="slider image 7" />
+            </li>
+            <li class="slide" id="slide8">
+                <img src="assets/images/Proyectos/Netjob/conversaciones.png" alt="slider image 8" />
+            </li>
+            <li class="slide" id="slide9">
+                <img src="assets/images/Proyectos/Netjob/detalle-de-conversacion.png" alt="slider image 9" />
+            </li>
+            <li class="slide" id="slide10">
+                <img src="assets/images/Proyectos/Netjob/solicitar-contratar.png" alt="slider image 10" />
+            </li>
+            <li class="slide" id="slide11">
+                <img src="assets/images/Proyectos/Netjob/ver-contrato.png" alt="slider image 11" />
+            </li>
+            <li class="slide" id="slide12">
+                <img src="assets/images/Proyectos/Netjob/cuenta-especialista.png" alt="slider image 12" />
+            </li>
+            <li class="slide" id="slide13">
+                <img src="assets/images/Proyectos/Netjob/crear-servicio.png" alt="slider image 13" />
+            </li>
+            <li class="slide" id="slide14">
+                <img src="assets/images/Proyectos/Netjob/servicio-creado.png" alt="slider image 14" />
+            </li>
+            <li class="slide" id="slide15">
+                <img src="assets/images/Proyectos/Netjob/pasarela-pago.png" alt="slider image 15" />
+            </li>
+            <a class="prev" id="prev">&#10094;</a>
+            <a class="next" id="next">&#10095;</a>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

@@ -70,8 +70,9 @@ function prevSlide() {
 
     if (position > 0) position--;
     else position = maxSlides;
+
+    console.log(currentSlide.id);
     /*
-        console.log(currentSlide);
         console.log(slidesIdArray[position]);
         console.log(maxSlides);
     */
