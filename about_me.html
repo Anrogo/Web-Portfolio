@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/about_styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/accordion_styles.css" />
     <script src="assets/js/jquery-3.6.0.min.js" type="text/javascript"></script>
     <script src="assets/js/menu_fixed.js" type="text/javascript"></script>
     <script src="assets/js/arrow_up.js" type="text/javascript"></script>
@@ -50,30 +51,54 @@
                 <h2>Un pequeño resumen de mi vida</h2>
             </article>
             <article class="info__content">
-                <p>
-                    Mi <b>Currículum Vitae</b>, actualizado con los últimos conocimientos adquiridos, lo puede ver desde <a href="cv/CV_Antonio_Rodriguez_Gonzalez.pdf" class="link" target="_blank">aquí</a>. Ahora voy a explicar un poco más sobre mí de
-                    lo que se puede ver en el CV, que está bastante resumido evidentemente.
-                </p>
-                <p>Soy Antonio Rodríguez González, desarrollador web en camino de ser como ahora se denomina comúnmente, "Full Stack Developer". No es más qué un desarrollador y diseñador de webs que trabaja desde la parte que ve el cliente hasta la parte
-                    de servidor, desde "frontend" al "backend", todo en uno. Para el que desee ampliar información al respecto puede verla
-                    <a href="https://www.viewnext.com/que-es-un-full-stack-developer/" class="link" target="_blank">aquí</a>.</p>
-                <p>He completado recientemente el CFGS de <a href="https://www.fp-informatica.com/daw-desarrollo-de-aplicaciones-web/" class="link" target="_blank">DAW</a> (Desarrollo de Aplicaciones Web), antes realicé el grado superior de <a href="https://www.fp-informatica.com/asir-administracion-de-sistemas-informaticos-en-red/"
-                        class="link" target="_blank">ASIR</a> (Administración de Sistemas Informáticos en Red), y actualmente me formo en el último superior de informática que quería realizar para ser programador: <a href="https://www.fp-informatica.com/dam-desarrollo-de-aplicaciones-multiplataforma/"
-                        class="link" target="_blank">DAM</a> o desarrollo de aplicaciones multiplataforma.
-                </p>
-                <p> No todo fue tan sencillo al principio, puesto que hace 7 años no tenía ni idea de informática ni de ordenadores y decidí entrar en una carrera que no me convencía demasiado. Terminé dejándolo y buscando otros caminos más acordes a mis
-                    gustos y en ese momento fue cuando descubrí el grado superior de ASIR, decidí entrar y probar suerte. Tras algunos meses me di cuenta de que era justo lo que me gustaba, siempre quería saber más y con mi ordenador iba indagando más
-                    en casa cuando tenía tiempo. Las asignaturas de programación, tras empezar a comprenderlas, me resultaron entretenidas y sencillas, así que vi claro cuál era mi camino.</p>
-                <p>
-                    Tras acabar este ciclo iba a entrar a DAM, sin embargo, finalmente estuve trabajando con una beca de prácticas del SEPI en una empresa llamada <a href="https://www.cetarsa.es" class="link" target="_blank">Cetarsa SA</a> , en la provincia
-                    de Cáceres. Realicé en mayor medida labores de sistemas, equipos, y redes pero nunca dejé de seguir avanzando en la programación por mi cuenta, y es que descubrí cómo funcionaban Java y C# (muy similares) durante ese período de formación.
-                    Más tarde, entré en DAW porque no pude hacerlo en DAM y tras estudiar un año más pude obtener mi segundo superior, ya que primero se convalidaba. Y ahora por fin me encuentro estudiando el ciclo que llevaba siguiendo todo este tiempo,
-                    ¡Feliz y contento de seguir aprendiendo cada día!
-                </p>
-                <p>
-                    Ahora ya he terminado las asignaturas del grado superior y estoy cursando actualmente la FCT en la empresa <a href="https://www.vmlyr.com/es-es/spain" class="link" target="_blank">VMLY&R</a>, gracias a una beca de prácticas que me
-                    han concedido; y al mismo tiempo que realizo el proyecto final junto a mis compañeros, desarrollando la aplicación móvil y web NetJob.
-                </p>
+                <details>
+                    <summary>
+                        Mi Curriculum Vitae
+                    </summary>
+                    <p>
+                        Mi <b>Currículum Vitae</b>, actualizado con los últimos conocimientos adquiridos, lo puedes ver desde <a href="cv/CV_Antonio_Rodriguez_Gonzalez.pdf" class="link" target="_blank">aquí</a>. Ahora voy a explicar un poco más sobre
+                        mí de lo que se puede ver en el CV, que está bastante resumido evidentemente.
+                    </p>
+                </details>
+                <details>
+                    <summary>¿Quién soy?</summary>
+                    <p>Soy Antonio Rodríguez González, un chico Ubetense de 25 años, desarrollador web en camino de ser como ahora se denomina comúnmente, "Full Stack Developer". Y no es más qué un desarrollador y diseñador de webs que trabaja desde la parte
+                        del servidor hasta la parte que ve el cliente en su navegador, es decir desde "frontend" al "backend", todo en uno. Para el que desee ampliar información al respecto puede verla
+                        <a href="https://www.viewnext.com/que-es-un-full-stack-developer/" class="link" target="_blank">aquí</a>.</p>
+                </details>
+
+                <details>
+                    <summary>¿Cuál es mi formación?</summary>
+                    <p>He completado recientemente el CFGS de <a href="https://www.fp-informatica.com/daw-desarrollo-de-aplicaciones-web/" class="link" target="_blank">DAW</a> (Desarrollo de Aplicaciones Web), antes realicé el grado superior de <a href="https://www.fp-informatica.com/asir-administracion-de-sistemas-informaticos-en-red/"
+                            class="link" target="_blank">ASIR</a> (Administración de Sistemas Informáticos en Red), y actualmente me formo en el último superior de informática que quería realizar para ser programador: <a href="https://www.fp-informatica.com/dam-desarrollo-de-aplicaciones-multiplataforma/"
+                            class="link" target="_blank">DAM</a> o desarrollo de aplicaciones multiplataforma.
+                    </p>
+                </details>
+                <details>
+                    <summary>Para aprender hay que equivocarse..</summary>
+                    <p> No todo fue tan sencillo al principio, puesto que hace unos 8 años no tenía ni idea de informática ni de ordenadores y decidí entrar en una carrera que no me convencía demasiado: Ingeniería de tecnologías de telecomunicación, comúnmente
+                        conocida como Teleco. Tras intentarlo durante 2 cursos terminé dejándolo y buscando otros caminos más acordes a mis gustos, y en ese momento fue cuando descubrí el grado superior de ASIR. Decidí entrar y probar suerte. Tras algunos
+                        meses me di cuenta de que era justo lo que me gustaba, siempre quería saber más y siempre que podía iba indagando por mi cuenta, en casa, con mi ordenador. Las asignaturas de programación, tras empezar a comprenderlas, me resultaron
+                        entretenidas y sencillas, así que vi claro cuál era mi camino.</p>
+                </details>
+                <details>
+                    <summary>¿Cómo llegué hasta aquí?</summary>
+                    <p>
+                        Tras acabar este ciclo iba a entrar a DAM, sin embargo, finalmente estuve trabajando con una beca de prácticas de la Fundación SEPI en una empresa llamada <a href="https://www.cetarsa.es" class="link" target="_blank">Cetarsa SA</a>                        , en la provincia de Cáceres. Realicé en mayor medida labores de sistemas, equipos, y redes pero nunca dejé de seguir avanzando en la programación por mi cuenta, y es que descubrí cómo funcionaban Java y C# (muy similares) durante
+                        ese período de formación. Más tarde, entré en DAW porque no pude hacerlo en DAM y tras estudiar un año más pude obtener mi segundo superior, ya que primero se convalidaba. Y ahora por fin me encuentro estudiando el ciclo que llevaba
+                        siguiendo todo este tiempo, ¡Feliz y contento de seguir aprendiendo cada día!
+                    </p>
+                </details>
+
+                <details>
+                    <summary>¿Qué hago en estos momentos?</summary>
+                    <p>
+                        Ahora ya he terminado las asignaturas del Grado Superior de DAM y estoy cursando actualmente la FCT en la empresa <a href="https://www.vmlyr.com/es-es/spain" class="link" target="_blank">VMLY&R</a>, gracias a una beca de prácticas
+                        que me han concedido; y al mismo tiempo que realizo el proyecto final junto a mis compañeros, desarrollando la aplicación móvil y web NetJob.
+                    </p>
+                </details>
+
+
             </article>
         </section>
         <hr>
@@ -91,22 +116,46 @@
                 <h2>Y ahora mi experiencia laboral + skills</h2>
             </article>
             <article class="info__content">
-                <p>
-                    <strong>Febrero - marzo 2021</strong> He trabajado como técnico de informática en un empresa de mi localidad, Úbeda. En este puesto he llevado a cabo desde inventario y revisión de equipos hasta resolución de diversos problemas tanto
-                    de software o hardware, como en impresoras y las conexiones de red entre otros.
-                </p>
-                <p>
-                    <strong>Abril – junio de 2020:</strong> Formación, mediante teletrabajo, con la empresa Soluciones Center SCA (FCT), del CFGS DAW. Diversas tareas relacionadas con desarrollo web, hosting, resolución de problemas y actualización de
-                    mis conocimientos sobre WordPress y PrestaShop con nuevos cursos y tareas.
-                </p>
-                <p>
-                    <strong>Noviembre 2018 - octubre 2019:</strong> trabajo como becario de la Fundación SEPI dentro del programa “Iniciación a la Empresa”, desde el 1 de noviembre de 2018 hasta el 31 de octubre de 2019. Administrador de sistemas, redes,
-                    mantenimiento y actualización de equipos informáticos e impresoras entre otras muchas tareas desarrolladas en ese año.
-                </p>
-                <p>
-                    <strong>Marzo – junio de 2018:</strong> Formación en centro de trabajo con Soluciones Center SCA (FCT), del CFGS ASIR. Aprendizaje sobre desarrollo de webs a través de los cms PrestaShop y WordPress. Recibí además una carta de recomendación
-                    de la empresa y dos certificados de especialista en PrestaShop y WordPress.
-                </p>
+                <details>
+                    <summary><strong>Marzo - Junio 2022</strong></summary>
+                    <p>
+                        Estoy inmerso en las prácticas del tercer trimestre. La FCT del Grado Superior de DAM. Las estoy llevando a cabo en la empresa <a href="https://www.vmlyr.com/es-es/spain" class="link" target="_blank">VMLY&R</a>, del grupo WPP situado
+                        en Ríos Rosas 26, Madrid.
+                    </p>
+                </details>
+
+                <details>
+                    <summary><strong>Febrero - marzo 2021</strong></summary>
+                    <p>
+                        He trabajado como técnico de informática en un empresa de mi localidad, Úbeda. En este puesto he llevado a cabo desde inventario y revisión de equipos hasta resolución de diversos problemas tanto de software o hardware, como en impresoras y las conexiones
+                        de red entre otros.
+                    </p>
+                </details>
+                <details>
+                    <summary>Abril – junio de 2020</summary>
+                    <p>
+                        Formación, mediante teletrabajo, con la empresa Soluciones Center SCA (FCT), del CFGS DAW. Diversas tareas relacionadas con desarrollo web, hosting, resolución de problemas y actualización de mis conocimientos sobre WordPress y PrestaShop con nuevos cursos
+                        y tareas.
+                    </p>
+                </details>
+                <details>
+                    <summary>Noviembre 2018 - octubre 2019</summary>
+                    <p>
+                        Trabajo como becario de la Fundación SEPI dentro del programa “Iniciación a la Empresa”, desde el 1 de noviembre de 2018 hasta el 31 de octubre de 2019. Administrador de sistemas, redes, mantenimiento y actualización de equipos informáticos e impresoras
+                        entre otras muchas tareas desarrolladas en ese año.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Marzo – junio de 2018</summary>
+                    <p>
+                        Formación en centro de trabajo con Soluciones Center SCA (FCT), del CFGS ASIR. Aprendizaje sobre desarrollo de webs a través de los cms PrestaShop y WordPress. Recibí además una carta de recomendación de la empresa y dos certificados de especialista en
+                        PrestaShop y WordPress.
+                    </p>
+                </details>
+
+
+
             </article>
             <article class="info__skills">
                 <div class="info__box">

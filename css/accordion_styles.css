@@ -1,0 +1,39 @@
+details {
+    display: block;
+    width: auto;
+    margin: 10px 0;
+}
+
+details p {
+    padding-left: 30px;
+}
+
+summary {
+    display: flex;
+    background: linear-gradient(205deg, #667eea7e 20%, #764ba298 80%);
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:before {
+    content: "+";
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 0;
+    width: 20px;
+    text-align: center;
+}
+
+details[open] summary:before {
+    content: "-";
+}
