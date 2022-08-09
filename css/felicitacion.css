@@ -1,0 +1,44 @@
+body {
+    width: auto;
+    max-height: 80%;
+    background-image: url('../assets/images/Felicitacion/tarta_silvia.gif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #a27fc5;
+}
+
+.tl {
+    width: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.tr {
+    width: auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.bl {
+    width: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.br {
+    width: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+@media screen and (max-width:500px) {
+    .gif {
+        width: 50%!important;
+    }
+}
