@@ -242,7 +242,6 @@ main {
 .magic-btn {
     background: #667eea;
     cursor: pointer;
-    color: #fff;
     border: none;
     padding: 16px 32px;
     font-size: 24px;
@@ -250,6 +249,11 @@ main {
     position: relative;
     border-radius: 36px;
     margin-top: 12px;
+}
+
+.magic-btn a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .magic-btn::before {
@@ -262,7 +266,7 @@ main {
     height: 100%;
     background: linear-gradient( 45deg, #01030b, #11d342, #6c09cf, #01030b, #11d342, #6c09cf);
     background-size: 800%;
-    border-radius: 12px;
+    border-radius: 36px;
     filter: blur(8px);
     animation: glowing 30s linear infinite;
 }
