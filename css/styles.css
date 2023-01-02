@@ -692,7 +692,7 @@ main {
         width: 120px;
         height: 120px;
     }
-    .presentation .magic-btn {
+    .magic-btn {
         font-size: 20px;
     }
     .about {
@@ -741,7 +741,7 @@ screen and (max-height: 450px) {
     .hero__cta {
         display: none;
     }
-    .presentation .magic-btn {
+    .magic-btn {
         font-size: 16px;
     }
 }
