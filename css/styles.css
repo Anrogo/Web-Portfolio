@@ -19,7 +19,9 @@
 /* CSS rules*/
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: /* 'Raleway', */
+    sans-serif, Arial, Helvetica;
+    font-size: 18px;
 }
 
 .container {
@@ -30,7 +32,7 @@ body {
 }
 
 .subtitle {
-    color: var(--color-primary);
+    color: var(--color-link);
 }
 
 .link {
@@ -81,7 +83,7 @@ body {
 /* Hero section */
 
 .hero {
-    height: 80vh;
+    height: 100vh;
     background-image: var(--background), url('../assets/images/header-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,7 +109,7 @@ body {
 .hero .container {
     width: 100%;
     padding: 0;
-    height: 450px;
+    height: auto;
 }
 
 .hero__container {
@@ -213,13 +215,14 @@ main {
 .presentation {
     text-align: center;
     padding-top: 0;
+    background-color: rgba(255, 255, 255, 58%);
 }
 
 .presentation__picture {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin: 24px 0;
     object-fit: cover;
     object-position: top;
 }
@@ -227,6 +230,7 @@ main {
 .presentation__copy {
     width: 80%;
     margin: 0 auto;
+    font-weight: bold;
 }
 
 .presentation__cta {
@@ -248,7 +252,7 @@ main {
     font-weight: bold;
     position: relative;
     border-radius: 36px;
-    margin-top: 12px;
+    margin: 24px 0;
 }
 
 .magic-btn a {
@@ -563,9 +567,16 @@ main {
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1000px) {
     .hero .container {
-        height: 520px;
+        width: 98%;
+    }
+    .presentation {
+        width: 90%;
+    }
+    .subtitle {
+        width: 90%;
+        margin: 0 20px;
     }
 }
 
@@ -600,12 +611,9 @@ main {
     .hero__subtitle img {
         width: 50px;
     }
-    .hero .container {
-        height: 490px;
-    }
     /* Main - About */
     .presentation__copy {
-        width: 100%;
+        width: 85%;
     }
     .about {
         grid-template-columns: 1fr;
@@ -672,9 +680,6 @@ main {
     .hero__texts {
         text-align: center;
         margin-bottom: 100px;
-    }
-    .hero .container {
-        height: 565px;
     }
     .hero__container {
         margin-top: 50px;
