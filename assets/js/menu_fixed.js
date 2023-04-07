@@ -1,11 +1,11 @@
 $(document).ready(function() {
     $(window).scroll(function() {
             if ($(window).scrollTop() > 40) {
-                //console.log("Has sobrepasado el header");
+                console.log("Has sobrepasado el header");
                 //Fijamos el menu superior:
                 $('.hero .nav').attr('id', 'menu-fixed');
-                $('section.presentation.container').css('margin-top', '150px');
-                $('section.hero__container').css('margin-top', '150px');
+                $('section.presentation.container').css('margin-top', '155px');
+                $('section.hero__container').css('margin-top', '155px');
                 $('#menu-fixed').fadeIn("slow", function() {});
             } else {
                 $('.hero .nav').attr('id', '');

@@ -8,7 +8,7 @@
 }
 
 .hero {
-    height: 80vh;
+    height: 56vh;
     background-image: var(--background), url('../assets/images/header-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -392,7 +392,7 @@ span.no-spinner img {
 
 @media screen and (max-width: 500px) {
     .hero {
-        height: 77vh;
+        height: 50vh;
     }
     .hero__container {
         margin-left: 0;
@@ -448,7 +448,7 @@ span.no-spinner img {
         margin: 20px;
     }
     .hero__subtitle {
-        font-size: 1rem!important;
+        font-size: 1.1rem!important;
         font-weight: 300;
     }
     .copyright {
@@ -457,9 +457,6 @@ span.no-spinner img {
 }
 
 @media screen and (max-width: 300px) {
-    .hero {
-        height: 85vh;
-    }
     .hero .container {
         height: 414px;
     }
