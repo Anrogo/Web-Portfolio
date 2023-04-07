@@ -1,7 +1,7 @@
 /* Styles for Projects page */
 
 .hero {
-    height: 80vh;
+    height: 60vh;
 }
 
 
@@ -36,6 +36,11 @@ main {
 article.project {
     width: 90%;
     margin-top: 60px;
+    margin: 0 auto;
+}
+
+article.project:first-child {
+    margin-top: 5px;
 }
 
 .project__container {
@@ -57,7 +62,7 @@ article.project {
 
 .project__title .btn__github {
     cursor: pointer;
-    width: 130px;
+    width: 120px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -186,7 +191,7 @@ ul.project__details__list li {
     }
     .project .project__title {
         justify-content: center;
-        width: 300px;
+        width: 385px;
     }
     .btn__github {
         margin-left: 8px;
@@ -198,6 +203,14 @@ ul.project__details__list li {
 
 
 /* Falla el responsive al reducir más de +/- 423px por culpa del main o alguna clase o todo a la vez*/
+
+@media screen and (max-width:420px) {
+    .project .project__title {
+        width: 224px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width:420px) {
     .hero__container {
@@ -215,11 +228,6 @@ ul.project__details__list li {
     .hero__container {
         margin: 0 5px;
     }
-    .project .project__title {
-        width: 250px;
-        flex-direction: column;
-        align-items: center;
-    }
     iframe {
         width: 210px!important;
     }
@@ -230,7 +238,7 @@ ul.project__details__list li {
 
 @media screen and (max-width:250px) {
     .project .project__title {
-        width: 180px;
+        width: 160px;
     }
     iframe {
         width: 180px!important;
