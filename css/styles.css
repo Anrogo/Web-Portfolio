@@ -244,7 +244,7 @@ main {
     border-radius: 40px;
 }
 
-.magic-btn a {
+.magic-btn a, .contact-btn a {
     text-decoration: none;
     color: #fff;
 }
