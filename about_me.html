@@ -16,6 +16,15 @@
     <script src="assets/js/jquery-3.6.0.min.js" type="text/javascript"></script>
     <script src="assets/js/arrow_up.js" type="text/javascript"></script>
 </head>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        let fn = new Date("1996-09-26");
+        let currentDate = new Date();
+        let age = Math.floor((currentDate - fn) / (1000 * 60 * 60 * 24 * 365.25));
+        //console.log(document.getElementById("age"));
+        if (age) document.getElementById("age").innerHTML = age;
+    });
+</script>
 
 <body>
     <header class="hero">
@@ -55,55 +64,92 @@
                         Mi Curriculum Vitae
                     </summary>
                     <p>
-                        Mi <b>Currículum Vitae</b>, actualizado con los últimos conocimientos adquiridos, lo puedes ver desde <a href="cv/CV_Antonio_Rodriguez_Gonzalez.pdf" class="link" target="_blank">aquí</a>. Ahora voy a explicar un poco más sobre
+                        Mi <b>Currículum Vitae</b>, actualizado con los últimos conocimientos adquiridos, lo puedes ver
+                        desde <a href="cv/CV_Antonio_Rodriguez_Gonzalez.pdf" class="link" target="_blank">aquí</a>.
+                        Ahora voy a explicar un poco más sobre
                         mí de lo que se puede ver en el CV, que está bastante resumido evidentemente.
                     </p>
                 </details>
                 <details>
                     <summary>¿Quién soy?</summary>
-                    <p>Soy Antonio Rodríguez González, un chico Ubetense de 25 años, desarrollador web en camino de ser como ahora se denomina comúnmente, "Full Stack Developer". Y no es más que un desarrollador y diseñador de webs que trabaja desde la parte
-                        del servidor, y la API, hasta la parte que ve el cliente en su navegador, es decir desde "frontend" al "backend", todo en uno. Para el que desee ampliar información al respecto puede verla
-                        <a href="https://www.viewnext.com/que-es-un-full-stack-developer/" class="link" target="_blank">aquí</a>.</p>
+                    <p>Soy Antonio Rodríguez González, un chico Ubetense de
+                        <span id="age">
+                        </span>
+                        años, desarrollador web en camino de ser como ahora se denomina comúnmente, "Full Stack
+                        Developer". Y no es más que un desarrollador y diseñador de webs que trabaja desde la parte
+                        del servidor, y la API, hasta la parte que ve el cliente en su navegador, es decir desde
+                        "frontend" al "backend", todo en uno. Para el que desee ampliar información al respecto puede
+                        verla
+                        <a href="https://www.viewnext.com/que-es-un-full-stack-developer/" class="link"
+                            target="_blank">aquí</a>.
+                    </p>
                 </details>
 
                 <details>
                     <summary>¿Cuál es mi formación?</summary>
-                    <p>He completado recientemente el CFGS de <a href="https://www.fp-informatica.com/daw-desarrollo-de-aplicaciones-web/" class="link" target="_blank">DAW</a> (Desarrollo de Aplicaciones Web), antes realicé el grado superior de <a href="https://www.fp-informatica.com/asir-administracion-de-sistemas-informaticos-en-red/"
-                            class="link" target="_blank">ASIR</a> (Administración de Sistemas Informáticos en Red), y actualmente me formo en el último superior de informática que quería realizar para ser programador: <a href="https://www.fp-informatica.com/dam-desarrollo-de-aplicaciones-multiplataforma/"
+                    <p>He completado recientemente el CFGS de <a
+                            href="https://www.fp-informatica.com/daw-desarrollo-de-aplicaciones-web/" class="link"
+                            target="_blank">DAW</a> (Desarrollo de Aplicaciones Web), antes realicé el grado superior de
+                        <a href="https://www.fp-informatica.com/asir-administracion-de-sistemas-informaticos-en-red/"
+                            class="link" target="_blank">ASIR</a> (Administración de Sistemas Informáticos en Red), y
+                        por último, pero no menos importante, me formé en el grado superior de informática que quería realizar para ser
+                        programador en un principio: <a
+                            href="https://www.fp-informatica.com/dam-desarrollo-de-aplicaciones-multiplataforma/"
                             class="link" target="_blank">DAM</a> o Desarrollo de Aplicaciones Multiplataforma.
                     </p>
                 </details>
                 <details>
                     <summary>Para aprender hay que equivocarse..</summary>
-                    <p> No todo fue tan sencillo al principio, puesto que hace unos 9 años no tenía ni idea de informática ni de ordenadores y decidí entrar en una carrera que no me convencía demasiado: Ingeniería de tecnologías de telecomunicación, comúnmente
-                        conocida como Teleco. Tras intentarlo durante 2 cursos terminé dejándolo y buscando otros caminos más acordes a mis gustos, y en ese momento fue cuando descubrí el grado superior de ASIR. Decidí entrar y probar suerte. Tras algunos
-                        meses me di cuenta de que era justo lo que me gustaba, siempre quería saber más y siempre que podía iba indagando por mi cuenta, en casa, con mi ordenador. Las asignaturas de programación, tras empezar a comprenderlas, me resultaron
+                    <p> No todo fue tan sencillo al principio, puesto que en 2014 años no tenía ni idea de
+                        informática ni de ordenadores y decidí entrar en una carrera que no me convencía demasiado:
+                        Ingeniería de tecnologías de telecomunicación, comúnmente
+                        conocida como Teleco. Tras intentarlo durante 2 cursos terminé dejándolo y buscando otros
+                        caminos más acordes a mis gustos, y en ese momento fue cuando descubrí el grado superior de
+                        ASIR. Decidí entrar y probar suerte. Tras algunos
+                        meses me di cuenta de que era justo lo que me gustaba, siempre quería saber más y siempre que
+                        podía iba indagando por mi cuenta, en casa, con mi ordenador, etc. Las asignaturas de programación,
+                        tras empezar a comprenderlas, me resultaron
                         entretenidas y sencillas, así que vi claro cuál era mi camino.</p>
                 </details>
                 <details>
                     <summary>¿Cómo llegué hasta aquí?</summary>
                     <p>
-                        Al acabar este ciclo iba a entrar a DAM, sin embargo, finalmente me apareció la oportunidad y acabé trabajando con una beca de prácticas de la Fundación SEPI en una empresa llamada <a href="https://www.cetarsa.es" class="link"
-                            target="_blank">Cetarsa SA</a> , en la provincia de Cáceres. Realicé en mayor medida labores de sistemas, equipos, y redes pero nunca dejé de seguir avanzando en la programación por mi cuenta, y es que descubrí cómo funcionaban
-                        Java y C# (muy similares) durante ese período de formación y desarrollo profesional. Más tarde, entré en DAW porque no fue posible entrar en DAM y era muy similar (el primer curso de ambos es prácticamente lo mismo). Así que, tras
-                        estudiar un año más pude obtener mi segundo superior. Y tras esta nueva etapa en Jaén me encontré estudiando el ciclo que llevaba siguiendo todo este tiempo. Ahora ya he terminado el Grado Superior de DAM, he cursado la FCT en
+                        Al acabar este ciclo iba a entrar a DAM, sin embargo, finalmente me apareció la oportunidad y
+                        acabé trabajando con una beca de prácticas de la Fundación SEPI en una empresa llamada <a
+                            href="https://www.cetarsa.es" class="link" target="_blank">Cetarsa SA</a> , en la provincia
+                        de Cáceres. Realicé en mayor medida labores de sistemas, equipos, y redes pero nunca dejé de
+                        seguir avanzando en la programación por mi cuenta, y es que descubrí cómo funcionaban
+                        Java y C# (muy similares) durante ese período de formación y desarrollo profesional. Más tarde,
+                        entré en DAW porque no fue posible entrar en DAM y era muy similar (el primer curso de ambos es
+                        prácticamente lo mismo). Así que, tras
+                        estudiar un año más pude obtener mi segundo superior. Y tras esta nueva etapa en Jaén me
+                        encontré estudiando el ciclo que llevaba siguiendo todo este tiempo. Ahora ya he terminado el
+                        Grado Superior de DAM, he cursado la FCT en
                         una empresa,
-                        <a href="https://www.vmlyr.com/es-es/spain" class="link" target="_blank">VMLY&R</a>, gracias a una beca de prácticas que me concedieron. Al mismo tiempo, realicé el proyecto final junto a mis compañeros, diseñando, desarrollando
+                        <a href="https://www.vmlyr.com/es-es/spain" class="link" target="_blank">VMLY&R</a>, gracias a
+                        una beca de prácticas que me concedieron. Al mismo tiempo, realicé el proyecto final junto a mis
+                        compañeros, diseñando, desarrollando
                         y programando la aplicación móvil y web <b> NetJob</b>.
                     </p>
                 </details>
                 <details>
                     <summary>¿Desde cuándo estoy en Madrid?</summary>
                     <p>
-                        Me vine a realizar las prácticas formativas de DAM y me he quedado. Ya que tras acabarlas me llegó una oferta de <a href="https://pepperfinance.es" class="link" target="_blank">Pepper Financial Services Group</a>, hice la entrevista,
-                        la superé con éxito y aquí continúo. Aprendiendo día a día siempre algo nuevo y superando las dificultades que se me presentan en el camino.
+                        Me vine a realizar las prácticas formativas de DAM y me he quedado. Ya que tras acabarlas me
+                        llegó una oferta de <a href="https://pepperfinance.es" class="link" target="_blank">Pepper
+                            Financial Services Group</a>, hice la entrevista,
+                        la superé con éxito y aquí continúo. Aprendiendo día a día siempre algo nuevo y superando las
+                        dificultades que se me presentan en el camino.
                     </p>
                 </details>
                 <details>
                     <summary>¿Qué hago en estos momentos?</summary>
                     <p>
-                        Soy desarrollador de backend en el equipo de mantenimiento de <a href="https://pepperfinance.es" class="link" target="_blank">Pepper Financial Services Group</a>, que es una multinacional del mundo financiero situada en Juan Esplandiu
-                        13, Madrid. Y me dedico principalmente a resolver incidencias y labores de mantenimiento a nivel de desarrollo de los aplicativos internos de a empresa.
+                        Ahora mismo soy parte del equipo de Frontend en  <a href="https://pepperfinance.es"
+                        class="link" target="_blank">Pepper Financial Services Group</a>, que es una multinacional
+                    del mundo financiero situada en Juan Esplandiu
+                    13, Madrid. Trabajo como desarrollador Front realizando las interfaces de usuario de las nuevos aplicativos y el mantenimiento y la resolución de bugs de proyectos existentes que ya tenemos en el mercado. Antes, en mi primera etapa en la empresa, fui desarrollador de backend en el equipo de mantenimiento, donde me dedicaba principalmente a resolver incidencias y labores de mantenimiento a nivel
+                        de desarrollo de los aplicativos internos de la empresa.
                     </p>
                 </details>
 
@@ -115,47 +161,71 @@
                 <h2>Mi formación académica</h2>
             </article>
             <article class="info__education">
-                <p><strong>2020 - 2022</strong>. CFGS Técnico Superior en Desarrollo de Aplicaciones Multiplataforma. En el <a href="https://www.cevonline.es" class="link" target="_blank">CEV - Escuela Superior de Comunicación, Imagen y Sonido de Madrid</a>.</p>
-                <p><strong>2019 - 2020</strong>. CFGS Técnico Superior en Desarrollo de Aplicaciones Web. En el instituto IES Virgen del Carmen, Jaén.</p>
-                <p><strong>2016 - 2018</strong>. CFGS Técnico Superior en Administración de Sistemas Informáticos en Red. En el instituto IES Los Cerros, Úbeda.</p>
-                <p><strong>2012 - 2014</strong>. Bachillerato científico-tecnológico. En el instituto IES Los Cerros, Úbeda.</p>
+                <p><strong>2020 - 2022</strong>. CFGS Técnico Superior en Desarrollo de Aplicaciones Multiplataforma. En
+                    el <a href="https://www.cevonline.es" class="link" target="_blank">CEV - Escuela Superior de
+                        Comunicación, Imagen y Sonido de Madrid</a>.</p>
+                <p><strong>2019 - 2020</strong>. CFGS Técnico Superior en Desarrollo de Aplicaciones Web. En el
+                    instituto IES Virgen del Carmen, Jaén.</p>
+                <p><strong>2016 - 2018</strong>. CFGS Técnico Superior en Administración de Sistemas Informáticos en
+                    Red. En el instituto IES Los Cerros, Úbeda.</p>
+                <p><strong>2012 - 2014</strong>. Bachillerato científico-tecnológico. En el instituto IES Los Cerros,
+                    Úbeda.</p>
             </article>
             <article class="info__title">
                 <h2>Y ahora mi experiencia laboral + skills</h2>
             </article>
             <article class="info__content">
                 <details>
-                    <summary><strong>Junio 2022 - Actualidad</strong></summary>
+                    <summary><strong>Septiembre 2023 - actualmente</strong></summary>
                     <p>
-                        Trabajo de desarrollador de backend en <a href="https://pepperfinance.es" class="link" target="_blank">Pepper Financial Services Group</a>, que es una multinacional del mundo financiero situada en Juan Esplandiu 13, Madrid.
+                        Trabajo de desarrollador frontend en <a href="https://pepperfinance.es" class="link"
+                            target="_blank">Pepper Financial Services Group</a> que es una multinacional del mundo
+                            financiero situada en Juan Esplandiu 13, Madrid.
+                    </p>
+                </details>
+
+
+                <details>
+                    <summary><strong>Junio 2022 - Septiembre 2023</strong></summary>
+                    <p>
+                        Trabajé de desarrollador de backend en <a href="https://pepperfinance.es" class="link"
+                            target="_blank">Pepper Financial Services Group</a>.
                     </p>
                 </details>
 
                 <details>
                     <summary><strong>Marzo - Junio 2022</strong></summary>
                     <p>
-                        La FCT del Grado Superior de DAM. Completada en la empresa <a href="https://www.vmlyr.com/es-es/spain" class="link" target="_blank">VMLY&R</a>, del grupo WPP situado en Ríos Rosas 26, Madrid.
+                        La FCT del Grado Superior de DAM. Completada en la empresa <a
+                            href="https://www.vmlyr.com/es-es/spain" class="link" target="_blank">VMLY&R</a>, del grupo
+                        WPP situado en Ríos Rosas 26, Madrid.
                     </p>
                 </details>
 
                 <details>
                     <summary><strong>Febrero - marzo 2021</strong></summary>
                     <p>
-                        He trabajado como técnico de informática en un empresa de mi localidad, Úbeda. En este puesto he llevado a cabo desde inventario y revisión de equipos hasta resolución de diversos problemas tanto de software o hardware, como en impresoras y las conexiones
+                        He trabajado como técnico de informática en un empresa de mi localidad, Úbeda. En este puesto he
+                        llevado a cabo desde inventario y revisión de equipos hasta resolución de diversos problemas
+                        tanto de software o hardware, como en impresoras y las conexiones
                         de red entre otros.
                     </p>
                 </details>
                 <details>
                     <summary>Abril – junio de 2020</summary>
                     <p>
-                        Formación, mediante teletrabajo, con la empresa Soluciones Center SCA (FCT), del CFGS DAW. Diversas tareas relacionadas con desarrollo web, hosting, resolución de problemas y actualización de mis conocimientos sobre WordPress y PrestaShop con nuevos cursos
+                        Formación, mediante teletrabajo, con la empresa Soluciones Center SCA (FCT), del CFGS DAW.
+                        Diversas tareas relacionadas con desarrollo web, hosting, resolución de problemas y
+                        actualización de mis conocimientos sobre WordPress y PrestaShop con nuevos cursos
                         y tareas.
                     </p>
                 </details>
                 <details>
                     <summary>Noviembre 2018 - octubre 2019</summary>
                     <p>
-                        Trabajo como becario de la Fundación SEPI dentro del programa “Iniciación a la Empresa”, desde el 1 de noviembre de 2018 hasta el 31 de octubre de 2019. Administrador de sistemas, redes, mantenimiento y actualización de equipos informáticos e impresoras
+                        Trabajo como becario de la Fundación SEPI dentro del programa “Iniciación a la Empresa”, desde
+                        el 1 de noviembre de 2018 hasta el 31 de octubre de 2019. Administrador de sistemas, redes,
+                        mantenimiento y actualización de equipos informáticos e impresoras
                         entre otras muchas tareas desarrolladas en ese año.
                     </p>
                 </details>
@@ -163,7 +233,9 @@
                 <details>
                     <summary>Marzo – junio de 2018</summary>
                     <p>
-                        Formación en centro de trabajo con Soluciones Center SCA (FCT), del CFGS ASIR. Aprendizaje sobre desarrollo de webs a través de los cms PrestaShop y WordPress. Recibí además una carta de recomendación de la empresa y dos certificados de especialista en
+                        Formación en centro de trabajo con Soluciones Center SCA (FCT), del CFGS ASIR. Aprendizaje sobre
+                        desarrollo de webs a través de los cms PrestaShop y WordPress. Recibí además una carta de
+                        recomendación de la empresa y dos certificados de especialista en
                         PrestaShop y WordPress.
                     </p>
                 </details>
@@ -176,19 +248,24 @@
                     <h3 class="box__title">Desarrollo Web</h3>
                     <div class="icon__box">
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/html_original_wordmark_logo_icon_146478.svg" alt="html icon" title="HTML">
+                            <img src="assets/images/Tecnologias/html_original_wordmark_logo_icon_146478.svg"
+                                alt="html icon" title="HTML">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/css_original_wordmark_logo_icon_146576.svg" alt="css icon" title="CSS">
+                            <img src="assets/images/Tecnologias/css_original_wordmark_logo_icon_146576.svg"
+                                alt="css icon" title="CSS">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/javascript_vertical_logo_icon_168606.svg" alt="js icon" title="JS">
+                            <img src="assets/images/Tecnologias/javascript_vertical_logo_icon_168606.svg" alt="js icon"
+                                title="JS">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/bootstrap_plain_wordmark_logo_icon_146620.svg" alt="bootstrap icon" title="BOOTSTRAP">
+                            <img src="assets/images/Tecnologias/bootstrap_plain_wordmark_logo_icon_146620.svg"
+                                alt="bootstrap icon" title="BOOTSTRAP">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/jquery_original_wordmark_logo_icon_146447.svg" alt="jquery icon" title="JQUERY">
+                            <img src="assets/images/Tecnologias/jquery_original_wordmark_logo_icon_146447.svg"
+                                alt="jquery icon" title="JQUERY">
                         </span>
                     </div>
                 </div>
@@ -196,16 +273,20 @@
                     <h3 class="box__title">Frameworks</h3>
                     <div class="icon__box">
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/codeigniter_plain_wordmark_logo_icon_146592.svg" alt="codeigniter icon" title="CODEIGNITER">
+                            <img src="assets/images/Tecnologias/codeigniter_plain_wordmark_logo_icon_146592.svg"
+                                alt="codeigniter icon" title="CODEIGNITER">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/angular-3.svg" class="icon-fill" alt="angular icon" title="ANGULAR">
+                            <img src="assets/images/Tecnologias/angular-3.svg" class="icon-fill" alt="angular icon"
+                                title="ANGULAR">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/spring-logo-9146a4d3298760c2e7e49595184e1975.svg" class="icon-fill" alt="spring boot icon" title="SPRING BOOT">
+                            <img src="assets/images/Tecnologias/spring-logo-9146a4d3298760c2e7e49595184e1975.svg"
+                                class="icon-fill" alt="spring boot icon" title="SPRING BOOT">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/nodejs_original_wordmark_logo_icon_146412.svg" alt="nodejs icon" title="NODE.JS">
+                            <img src="assets/images/Tecnologias/nodejs_original_wordmark_logo_icon_146412.svg"
+                                alt="nodejs icon" title="NODE.JS">
                         </span>
                     </div>
                 </div>
@@ -213,19 +294,24 @@
                     <h3 class="box__title">Bases de datos</h3>
                     <div class="icon__box">
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/sql-server-tutorial.svg" alt="sql server icon" title="SQL Server">
+                            <img src="assets/images/Tecnologias/sql-server-tutorial.svg" alt="sql server icon"
+                                title="SQL Server">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/mysql_original_wordmark_logo_icon_146417.svg" alt="mysql icon" title="MYSQL">
+                            <img src="assets/images/Tecnologias/mysql_original_wordmark_logo_icon_146417.svg"
+                                alt="mysql icon" title="MYSQL">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/1486565575-microsoft-office-access_81547.svg" alt="access icon" title="ACCESS">
+                            <img src="assets/images/Tecnologias/1486565575-microsoft-office-access_81547.svg"
+                                alt="access icon" title="ACCESS">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Entornos/mysqlworkbench_93532.svg" alt="workbench icon" title="WORKBENCH">
+                            <img src="assets/images/Entornos/mysqlworkbench_93532.svg" alt="workbench icon"
+                                title="WORKBENCH">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/mongodb_original_wordmark_logo_icon_146425.svg" alt="mongodb icon" title="MONGO DB">
+                            <img src="assets/images/Tecnologias/mongodb_original_wordmark_logo_icon_146425.svg"
+                                alt="mongodb icon" title="MONGO DB">
                         </span>
                     </div>
                 </div>
@@ -233,13 +319,16 @@
                     <h3 class="box__title">Apps móviles y diseño</h3>
                     <div class="icon__box">
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/java_original_wordmark_logo_icon_146459.svg" alt="java icon" title="JAVA">
+                            <img src="assets/images/Tecnologias/java_original_wordmark_logo_icon_146459.svg"
+                                alt="java icon" title="JAVA">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Entornos/android_plain_wordmark_logo_icon_146652.svg" alt="android icon" title="ANDROID">
+                            <img src="assets/images/Entornos/android_plain_wordmark_logo_icon_146652.svg"
+                                alt="android icon" title="ANDROID">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/swift_horizontal_logo_icon_168771.svg" alt="swift icon" class="icon-fill" title="SWIFT">
+                            <img src="assets/images/Tecnologias/swift_horizontal_logo_icon_168771.svg" alt="swift icon"
+                                class="icon-fill" title="SWIFT">
                         </span>
                         <span class="icon">
                             <img src="assets/images/Entornos/unity_logo_icon_144772.svg" alt="unity icon" title="UNITY">
@@ -248,7 +337,8 @@
                             <img src="assets/images/Entornos/3ds-max-full.svg" alt="3ds-max icon" title="3DS MAX">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/1485282157-adobe-photoshop-raster-graphics-editor-cc-creative-cloud_78285.svg" alt="photoshop icon" title="PHOTOSHOP">
+                            <img src="assets/images/Tecnologias/1485282157-adobe-photoshop-raster-graphics-editor-cc-creative-cloud_78285.svg"
+                                alt="photoshop icon" title="PHOTOSHOP">
                         </span>
                     </div>
                 </div>
@@ -256,19 +346,24 @@
                     <h3 class="box__title">Microsoft Office</h3>
                     <div class="icon__box">
                         <span class="icon">
-                            <img src="assets/images/Entornos/file_type_word_icon_130070.svg" alt="word icon" title="WORD">
+                            <img src="assets/images/Entornos/file_type_word_icon_130070.svg" alt="word icon"
+                                title="WORD">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Entornos/file_type_excel_icon_130611.svg" alt="excel icon" title="EXCEL">
+                            <img src="assets/images/Entornos/file_type_excel_icon_130611.svg" alt="excel icon"
+                                title="EXCEL">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Entornos/microsoft_office_outlook_logo_icon_145721.svg" alt="outlook icon" title="OUTLOOK">
+                            <img src="assets/images/Entornos/microsoft_office_outlook_logo_icon_145721.svg"
+                                alt="outlook icon" title="OUTLOOK">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Entornos/file_type_powerpoint_icon_130245.svg" alt="powerpoint icon" title="POWERPOINT">
+                            <img src="assets/images/Entornos/file_type_powerpoint_icon_130245.svg" alt="powerpoint icon"
+                                title="POWERPOINT">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Entornos/microsoft_onedrive_drive_office_logo_icon_145729.svg" alt="onedrive icon" title="ONEDRIVE">
+                            <img src="assets/images/Entornos/microsoft_onedrive_drive_office_logo_icon_145729.svg"
+                                alt="onedrive icon" title="ONEDRIVE">
                         </span>
                     </div>
                 </div>
@@ -276,22 +371,28 @@
                     <h3 class="box__title">Varias</h3>
                     <div class="icon__box">
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/csharp_plain_logo_icon_146577.svg" alt="csharp icon" title="CSHARP">
+                            <img src="assets/images/Tecnologias/csharp_plain_logo_icon_146577.svg" alt="csharp icon"
+                                title="CSHARP">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/python_vertical_logo_icon_168039.svg" alt="python icon" title="PYTHON">
+                            <img src="assets/images/Tecnologias/python_vertical_logo_icon_168039.svg" alt="python icon"
+                                title="PYTHON">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Tecnologias/git_original_wordmark_logo_icon_146510.svg" alt="git icon" title="GIT">
+                            <img src="assets/images/Tecnologias/git_original_wordmark_logo_icon_146510.svg"
+                                alt="git icon" title="GIT">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Entornos/github_original_wordmark_logo_icon_146506.svg" alt="githbub icon" title="GITHUB">
+                            <img src="assets/images/Entornos/github_original_wordmark_logo_icon_146506.svg"
+                                alt="githbub icon" title="GITHUB">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Entornos/filezilla_94684.svg" alt="filezilla icon" title="FILEZILLA">
+                            <img src="assets/images/Entornos/filezilla_94684.svg" alt="filezilla icon"
+                                title="FILEZILLA">
                         </span>
                         <span class="icon">
-                            <img src="assets/images/Entornos/file_type_vscode_icon_130084.svg" alt="vscode icon" title="VS CODE">
+                            <img src="assets/images/Entornos/file_type_vscode_icon_130084.svg" alt="vscode icon"
+                                title="VS CODE">
                         </span>
                         <span class="icon">
                             <img src="assets/images/Entornos/logo-postman.svg" alt="postman icon" title="POSTMAN">
@@ -307,47 +408,62 @@
             </article>
             <article class="info__courses">
                 <p>
-                    <ol>
-                        <li>
-                            Cursos realizados durante el final de DAM o posteriormente:
-                            <ul>
-                                <li>
-                                    <strong>2022</strong>. <a href="https://www.udemy.com/course/universidad-spring-framework-springboot-java-security-rest-webservices/" class="link" target="_blank">Universidad Spring 2021 - Spring Framework y Spring Boot</a>                                    (74 h).
-                                </li>
-                                <li>
-                                    <strong>2022</strong>.
-                                    <a href="https://www.udemy.com/course/universidad-python-desde-cero-hasta-experto-django-flask-rest-web/" class="link" target="_blank">Universidad Python 2021 - POO, Tkinter, Django, Flask y más</a> (47 h).
-                                </li>
-                            </ul>
-                        </li>
-                        <br />
-                        <li>
-                            Cursos realizados por mi cuenta durante el período de confinamiento por COVID-19 y las prácticas de DAW:
-                            <ul>
-                                <li><strong>2020</strong>.
-                                    <a href="https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/" class="link" target="_blank">Master en webs Full Stack: Angular, Node, Laravel, Symfony</a> (34 h).</li>
-                                <li><strong>2020</strong>. Curso de Bootstrap (4 h, para profundizar algo más mis conocimientos).</li>
-                            </ul>
-                        </li>
-                        <br />
-                        <li>Cursos realizados, durante CFGS DAW, a través la plataforma OpenWebinars, en colaboración con el IES Virgen del Carmen durante el curso 2019/20:
-                            <ul>
-                                <li><strong>2020</strong>. Curso de Bootstrap 4: Maquetación responsive y layout (12 h).</li>
-                                <li><strong>2020</strong>. Curso de CodeIgniter 3 (para el proyecto de fin de ciclo - 10 h).</li>
-                                <li><strong>2020</strong>. Curso de Javascript Profesional (30 h).</li>
-                                <li><strong>2019</strong>. Curso de HTML5 y CSS3 (10 h).</li>
-                            </ul>
-                        </li>
-                        <br />
-                        <li>Cursos realizados durante CFGS ASIR en IES Los Cerros en el período de 2016-2018, a través de Cisco Academy:
-                            <ul>
-                                <li><strong>2018</strong>. CCNA Switching & Routing: Principios básicos de routing y switching.</li>
-                                <li><strong>2018</strong>. Cisco Networking Academy Cybersecurity Essentials.</li>
-                                <li><strong>2018</strong>. Cisco Networking Academy Introduction to Cybersecurity.</li>
-                                <li><strong>2017</strong>. CCNA Switching & Routing: Introducción a redes..</li>
-                            </ul>
-                        </li>
-                    </ol>
+                <ol>
+                    <li>
+                        Cursos realizados durante el final de DAM o posteriormente:
+                        <ul>
+                            <li>
+                                <strong>2022</strong>. <a
+                                    href="https://www.udemy.com/course/universidad-spring-framework-springboot-java-security-rest-webservices/"
+                                    class="link" target="_blank">Universidad Spring 2021 - Spring Framework y Spring
+                                    Boot</a> (74 h).
+                            </li>
+                            <li>
+                                <strong>2022</strong>.
+                                <a href="https://www.udemy.com/course/universidad-python-desde-cero-hasta-experto-django-flask-rest-web/"
+                                    class="link" target="_blank">Universidad Python 2021 - POO, Tkinter, Django, Flask y
+                                    más</a> (47 h).
+                            </li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>
+                        Cursos realizados por mi cuenta durante el período de confinamiento por COVID-19 y las prácticas
+                        de DAW:
+                        <ul>
+                            <li><strong>2020</strong>.
+                                <a href="https://www.udemy.com/course/master-en-desarrollo-web-full-stack-angular-node-laravel-symfony/"
+                                    class="link" target="_blank">Master en webs Full Stack: Angular, Node, Laravel,
+                                    Symfony</a> (34 h).
+                            </li>
+                            <li><strong>2020</strong>. Curso de Bootstrap (4 h, para profundizar algo más mis
+                                conocimientos).</li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>Cursos realizados, durante CFGS DAW, a través la plataforma OpenWebinars, en colaboración con el
+                        IES Virgen del Carmen durante el curso 2019/20:
+                        <ul>
+                            <li><strong>2020</strong>. Curso de Bootstrap 4: Maquetación responsive y layout (12 h).
+                            </li>
+                            <li><strong>2020</strong>. Curso de CodeIgniter 3 (para el proyecto de fin de ciclo - 10 h).
+                            </li>
+                            <li><strong>2020</strong>. Curso de Javascript Profesional (30 h).</li>
+                            <li><strong>2019</strong>. Curso de HTML5 y CSS3 (10 h).</li>
+                        </ul>
+                    </li>
+                    <br />
+                    <li>Cursos realizados durante CFGS ASIR en IES Los Cerros en el período de 2016-2018, a través de
+                        Cisco Academy:
+                        <ul>
+                            <li><strong>2018</strong>. CCNA Switching & Routing: Principios básicos de routing y
+                                switching.</li>
+                            <li><strong>2018</strong>. Cisco Networking Academy Cybersecurity Essentials.</li>
+                            <li><strong>2018</strong>. Cisco Networking Academy Introduction to Cybersecurity.</li>
+                            <li><strong>2017</strong>. CCNA Switching & Routing: Introducción a redes..</li>
+                        </ul>
+                    </li>
+                </ol>
                 </p>
             </article>
             <div class="center">
@@ -381,7 +497,8 @@
                         <a class="fab fa-telegram-plane footer__icon" href="https://t.me/anrogo4" target="_blank"></a>
                     </span>
                     <span class="footer__container-icons linkedin">
-                        <a class="fab fa-linkedin-in footer__icon" href="https://www.linkedin.com/in/antonio-rodriguez-gonzalez/" target="_blank"></a>
+                        <a class="fab fa-linkedin-in footer__icon"
+                            href="https://www.linkedin.com/in/antonio-rodriguez-gonzalez/" target="_blank"></a>
                     </span>
                     <span class="footer__container-icons github">
                         <a class="fab fa-github footer__icon" href="https://github.com/anrogo" target="_blank"></a>
@@ -396,7 +513,7 @@
 
 
     <!-- <a href=https://www.freepik.com/psd/mockup>Mockup psd created by freepik - www.freepik.com</a> 
-    <script src="https://kit.fontawesome.com/2cf186fa90.js" crossorigin="anonymous"></script>-->
+    <script src="https://kit.fontawesome.com/2cf186fa90.js" crossorigin="anonymous"></scrip>-->
     <script src="assets/js/font-awesome.js"></script>
 
 </body>

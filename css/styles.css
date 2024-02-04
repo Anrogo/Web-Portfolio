@@ -244,7 +244,25 @@ main {
     border-radius: 40px;
 }
 
+.magic-btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .magic-btn {
+    background: #667eea;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    padding: 16px 32px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 36px;
+    margin: 24px 0;
+}
+
+.contact-btn {
     background: #667eea;
     cursor: pointer;
     border: none;
@@ -256,10 +274,6 @@ main {
     margin: 24px 0;
 }
 
-.magic-btn a {
-    text-decoration: none;
-    color: #fff;
-}
 
 .magic-btn::before {
     content: "";
@@ -269,9 +283,9 @@ main {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: linear-gradient( 45deg, #01030b, #11d342, #6c09cf, #01030b, #11d342, #6c09cf);
+    background: linear-gradient( 45deg, #6c09cf, #11d342, #6c09cf);
     background-size: 800%;
-    border-radius: 36px;
+    border-radius: 12px;
     filter: blur(8px);
     animation: glowing 30s linear infinite;
 }
@@ -699,7 +713,7 @@ main {
         width: 120px;
         height: 120px;
     }
-    .magic-btn {
+    .magic-btn, .contact-btn {
         font-size: 20px;
     }
     .about {
@@ -748,7 +762,7 @@ screen and (max-height: 450px) {
     .hero__cta {
         display: none;
     }
-    .magic-btn {
+    .magic-btn, .contact-btn {
         font-size: 16px;
     }
 }
