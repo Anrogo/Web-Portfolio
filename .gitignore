@@ -18,7 +18,8 @@
 .htaccess*
 .vscode/
 /assets/mockup-electronic-devices.zip
+!/assets/images/**
+!/cv/*.pdf
 /logs
 /projects/*
 !/projects/.gitkeep
-

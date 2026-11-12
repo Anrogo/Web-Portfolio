@@ -19,8 +19,7 @@
 /* CSS rules*/
 
 body {
-    font-family: /* 'Raleway', */
-    sans-serif, Arial, Helvetica;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
